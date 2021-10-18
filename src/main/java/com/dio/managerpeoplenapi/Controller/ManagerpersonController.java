@@ -1,4 +1,4 @@
-package com.dio.managerpersonapi.Controller;
+package com.dio.managerpeoplenapi.Controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package com.dio.managerpeoplenapi.dto.request;
+package com.dio.managementpeoplenapi.dto.request;
 
 import java.util.List;
 

@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.dio</groupId>
-	<artifactId>managementpersonapi</artifactId>
+	<artifactId>managementpeopleapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>managerpersonapi</name>
+	<name>managerpeopleapi</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>

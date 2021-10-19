@@ -1,6 +1,6 @@
-package com.dio.managerpeoplenapi.repository;
+package com.dio.managementpeoplenapi.repository;
 
-import com.dio.managerpeoplenapi.entity.Person;
+import com.dio.managementpeoplenapi.entity.Person;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

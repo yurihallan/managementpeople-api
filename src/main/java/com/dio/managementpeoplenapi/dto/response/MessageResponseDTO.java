@@ -1,4 +1,4 @@
-package com.dio.managerpeoplenapi.dto.response;
+package com.dio.managementpeoplenapi.dto.response;
 
 import lombok.Builder;
 import lombok.Data;

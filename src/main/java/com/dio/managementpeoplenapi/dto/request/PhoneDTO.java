@@ -1,11 +1,11 @@
-package com.dio.managerpeoplenapi.dto.request;
+package com.dio.managementpeoplenapi.dto.request;
 
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
-import com.dio.managerpeoplenapi.enums.PhoneType;
+import com.dio.managementpeoplenapi.enums.PhoneType;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

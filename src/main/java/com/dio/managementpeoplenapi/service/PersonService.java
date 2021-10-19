@@ -1,13 +1,13 @@
-package com.dio.managerpeoplenapi.service;
+package com.dio.managementpeoplenapi.service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.dio.managerpeoplenapi.dto.request.PersonDTO;
-import com.dio.managerpeoplenapi.dto.response.MessageResponseDTO;
-import com.dio.managerpeoplenapi.entity.Person;
-import com.dio.managerpeoplenapi.mapper.PersonMapper;
-import com.dio.managerpeoplenapi.repository.PersonRepository;
+import com.dio.managementpeoplenapi.dto.request.PersonDTO;
+import com.dio.managementpeoplenapi.dto.response.MessageResponseDTO;
+import com.dio.managementpeoplenapi.entity.Person;
+import com.dio.managementpeoplenapi.mapper.PersonMapper;
+import com.dio.managementpeoplenapi.repository.PersonRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.dio.managerpeoplenapi.enums;
+package com.dio.managementpeoplenapi.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

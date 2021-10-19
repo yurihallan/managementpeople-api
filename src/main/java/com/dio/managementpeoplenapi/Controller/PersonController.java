@@ -1,12 +1,12 @@
-package com.dio.managerpeoplenapi.Controller;
+package com.dio.managementpeoplenapi.Controller;
 
 import java.util.List;
 
 import javax.validation.Valid;
 
-import com.dio.managerpeoplenapi.dto.request.PersonDTO;
-import com.dio.managerpeoplenapi.dto.response.MessageResponseDTO;
-import com.dio.managerpeoplenapi.service.PersonService;
+import com.dio.managementpeoplenapi.dto.request.PersonDTO;
+import com.dio.managementpeoplenapi.dto.response.MessageResponseDTO;
+import com.dio.managementpeoplenapi.service.PersonService;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package com.dio.managerpeoplenapi.entity;
+package com.dio.managementpeoplenapi.entity;
 
 import java.time.LocalDate;
 import java.util.List;

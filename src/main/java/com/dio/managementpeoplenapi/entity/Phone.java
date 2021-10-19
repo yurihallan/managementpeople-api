@@ -1,4 +1,4 @@
-package com.dio.managerpeoplenapi.entity;
+package com.dio.managementpeoplenapi.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,7 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import com.dio.managerpeoplenapi.enums.PhoneType;
+import com.dio.managementpeoplenapi.enums.PhoneType;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

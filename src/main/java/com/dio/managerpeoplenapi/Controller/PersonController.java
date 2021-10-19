@@ -1,10 +1,13 @@
 package com.dio.managerpeoplenapi.Controller;
 
+import javax.validation.Valid;
+
+import com.dio.managerpeoplenapi.dto.request.PersonDTO;
 import com.dio.managerpeoplenapi.dto.response.MessageResponseDTO;
-import com.dio.managerpeoplenapi.entity.Person;
 import com.dio.managerpeoplenapi.service.PersonService;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,11 +27,16 @@ public class PersonController {
 	}
 
 
+    @GetMapping
+    public String getTest(){
+        return "Works!";
+    }
+
 
 	@PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public MessageResponseDTO createPerson(@RequestBody Person person){
-       return personService.createPerson(person);
+    public MessageResponseDTO createPerson(@RequestBody @Valid PersonDTO personDTO){
+       return personService.createPerson(personDTO);
     }
     
 }

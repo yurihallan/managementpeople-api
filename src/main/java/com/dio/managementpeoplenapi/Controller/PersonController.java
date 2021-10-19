@@ -1,5 +1,7 @@
 package com.dio.managerpeoplenapi.Controller;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import com.dio.managerpeoplenapi.dto.request.PersonDTO;
@@ -28,8 +30,8 @@ public class PersonController {
 
 
     @GetMapping
-    public String getTest(){
-        return "Works!";
+    public List<PersonDTO> ListAll(){
+        return personService.listAll();
     }
 
 

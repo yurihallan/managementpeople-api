@@ -8,12 +8,12 @@ import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 @Mapper
-public abstract class PersonMapper {
-    
-    public static PersonMapper INSTANCE = Mappers.getMapper(PersonMapper.class);
+public interface PersonMapper {
+
+    PersonMapper INSTANCE = Mappers.getMapper(PersonMapper.class);
 
     @Mapping(target = "birthDate", source = "birthDate", dateFormat = "dd-MM-yyyy")
-    public abstract Person toModel(PersonDTO personDTO);
+    Person toModel(PersonDTO personDTO);
 
-    public abstract PersonDTO toDTO(Person person);
+    PersonDTO toDTO(Person person);
 }

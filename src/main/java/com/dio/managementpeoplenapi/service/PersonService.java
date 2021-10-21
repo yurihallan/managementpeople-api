@@ -3,6 +3,8 @@ package com.dio.managementpeoplenapi.service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.validation.Valid;
+
 import com.dio.managementpeoplenapi.dto.request.PersonDTO;
 import com.dio.managementpeoplenapi.dto.response.MessageResponseDTO;
 import com.dio.managementpeoplenapi.entity.Person;
@@ -29,10 +31,7 @@ public class PersonService {
         Person personToSave = personMapper.toModel(personDTO);
 
         Person savePerson = personRepository.save(personToSave);
-        return MessageResponseDTO
-                .builder()
-                .message("Created person with ID "+ savePerson.getId())
-                .build();
+        return createMessageResponse(savePerson.getId(), "Create person with success ");
     }
 
     public List<PersonDTO> listAll() {
@@ -53,7 +52,25 @@ public class PersonService {
         personRepository.deleteById(id);        
     }
 
-    
+
+    public MessageResponseDTO updateById(Long id, @Valid PersonDTO personDTO) throws PersonNotFoundException {
+        verifyIfexist(id);
+
+        Person personToSave = personMapper.toModel(personDTO);
+
+        Person savePerson = personRepository.save(personToSave);
+
+        return createMessageResponse(savePerson.getId(), "Update person with ID ");
+    }
+
+    private MessageResponseDTO createMessageResponse(Long id, String s) {
+        return MessageResponseDTO
+                .builder()
+                .message(s + id)
+                .build();
+    }
+
+
 
     private Person verifyIfexist(@PathVariable Long id) throws PersonNotFoundException{
         return personRepository.findById(id)
